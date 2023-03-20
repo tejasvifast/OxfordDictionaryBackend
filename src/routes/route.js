@@ -7,6 +7,6 @@ const {detailedSearchedWord}=require('../controllers/detailedSearchedWord')
 
 router.post('/Dictionary', searchedWordandDb)
 router.get('/getAddedWords', getAllAddedWords)
-router.post('/wordDetails',detailedSearchedWord)
+router.post('/wordDetails', detailedSearchedWord)
 
 module.exports = router
