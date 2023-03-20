@@ -8,9 +8,7 @@ const port = process.env.PORT || 5000
 
 app.use(express.json())
 app.use(express.urlencoded({extended: true}))
-app.use(cors({
-    origin:['*','https://oxforddictionary.onrender.com']
-}))
+app.use(cors('*'))
 
 mongoose.connect("mongodb+srv://pragya_user1:tfr9Y2SlmidKsL1L@cluster0.e7bog.mongodb.net/Express-React", {
     useNewUrlParser: true
